@@ -2,7 +2,9 @@
     width: 100%;
     align-items: center;
     font-family: "Arial", sans-serif;
-    color: #3e497a;
+    color: black;
+    padding: 0;
+    margin: 0;
   }
   
   .about {
@@ -13,7 +15,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #21325e;
+    background-color: #04152d;
     color: #f0f0f0;
   }
   

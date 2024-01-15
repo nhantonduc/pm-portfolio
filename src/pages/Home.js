@@ -1,21 +1,21 @@
 import React from 'react'
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from "@mui/icons-material/Email";
 import "../styles/home.css";
+import { Element } from 'react-scroll';
+import SectionWrapper from "../hoc/SectionWrapper.js";
 
-function Home() {
+const Home = () => {
   return (
-    <div className="home">
+    <Element  name="home">
+    <div className="home" >
         <div className="about">
             <h2>Hi, my name is Nhan!</h2>
             <div className="prompt">
                 <p>insert description</p>
-                <LinkedInIcon/>
-                <EmailIcon/>
             </div>
         </div>
     </div>
+    </Element>
   )
 }
 
-export default Home
+export default SectionWrapper(Home, "home");

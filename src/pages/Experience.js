@@ -1,14 +1,18 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
+import { Element } from 'react-scroll';
 import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 import "../styles/experience.css";
+import SectionWrapper from "../hoc/SectionWrapper.js";
 
-function Experience() {
+const Experience = () => {
   return (
+    <Element name="experience">
     <div className="experience">
-        <VerticalTimeline lineColor="#3e497a">
+        <h1 className='titler'>Experience</h1>
+        <VerticalTimeline lineColor="white">
             <VerticalTimelineElement 
                 className="vertical-timeline-element--education"
                 date="October 2023 - Present"
@@ -16,7 +20,7 @@ function Experience() {
                 icon={<WorkIcon/>}
             >
                 <h3 className="vertical-timeline-element-title">
-                    Founder, CEO at UniMate
+                    Founder at UniMate
                 </h3>
                 <p>
                     <ul>
@@ -62,7 +66,8 @@ function Experience() {
             </VerticalTimelineElement>           
         </VerticalTimeline>        
     </div>
+    </Element>
   )
 }
 
-export default Experience
+export default SectionWrapper(Experience, "work");

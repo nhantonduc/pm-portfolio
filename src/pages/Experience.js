@@ -2,21 +2,20 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
 import { Element } from 'react-scroll';
 import "react-vertical-timeline-component/style.min.css";
-import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 import "../styles/experience.css";
 import SectionWrapper from "../hoc/SectionWrapper.js";
 
-const Experience = () => {
+function Experience() {
   return (
     <Element name="experience">
     <div className="experience">
         <h1 className='titler'>Experience</h1>
-        <VerticalTimeline lineColor="white">
+        <VerticalTimeline lineColor="gold">
             <VerticalTimelineElement 
                 className="vertical-timeline-element--education"
                 date="October 2023 - Present"
-                iconStyle={{background:"#3e497a", color: "#fff"}}
+                iconStyle={{background:"#fff", color: "gold"}}
                 icon={<WorkIcon/>}
             >
                 <h3 className="vertical-timeline-element-title">
@@ -60,9 +59,22 @@ const Experience = () => {
                 icon={<WorkIcon/>}
             >
                 <h3 className="vertical-timeline-element-title">
-                    Boston University, MA
+                    Cinema Product Management Intern at <a href="https://momo.careers/about/">MoMo (M_Service)</a>
                 </h3>
-                <p>...CV Bullet Points...</p>
+                <p>
+                    <ul>
+                        <li>Launched 2 features with an increase of 20% in Average Order Value and online concession transactions
+                            </li>
+                        <li>Conducted 15+ user interviews, crafted the job-to-be-done framework, and 
+                            proficiently utilized Figma for prototyping</li>
+                        <li>Performed data analysis and identified a $1 million market opportunity for the cinema delivery-to-seat service, created
+                            the service blueprint, and outlined the development phases for implementation and 
+                            respective success metrics</li>
+                        <li>Collaborated closely with cross-functional teams including 10+ developers, product designers, and business development
+                            professionals to define sprint goals & scope, and prioritize delivering tasks 
+                            based on costs and customer impacts</li>
+                    </ul>
+                </p>
             </VerticalTimelineElement>           
         </VerticalTimeline>        
     </div>

@@ -1,20 +1,18 @@
 import React from 'react'
 import "../styles/home.css";
-import { Element } from 'react-scroll';
 import SectionWrapper from "../hoc/SectionWrapper.js";
 
 const Home = () => {
   return (
-    <Element  name="home">
     <div className="home" >
         <div className="about">
-            <h2>Hi, my name is Nhan!</h2>
+            <h2>Hi, I am <span className="name">Nhan</span></h2>
             <div className="prompt">
-                <p>insert description</p>
+                <p>An aspiring Product Manager with a passion for entrepreneurship, and
+                  proficiency in technical, product discovery, and data analysis skills </p>
             </div>
         </div>
     </div>
-    </Element>
   )
 }
 

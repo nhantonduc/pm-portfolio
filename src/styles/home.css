@@ -1,35 +1,47 @@
 .home {
     width: 100%;
     align-items: center;
-    font-family: "Arial", sans-serif;
     color: black;
     padding: 0;
     margin: 0;
   }
   
   .about {
-    width: 100%;
-    height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
+    width: 90%;
+    height: calc(100vh - 400px);
+    margin-left: 60px;
+    margin-top: 150px;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color: #04152d;
-    color: #f0f0f0;
+    text-align: left;
+    background-color: black;
   }
-  
+
   .about h2 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 80px;
-    color: #e9d35b;
+    font-size: 50px;
+    color: white;
     height: 50px;
+    margin-bottom: 20px; /* Adjusted margin to move the text down */
+  }
+
+  .about .name {
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-fill-color: transparent;
+  }
+  .about .prompt {
+    width: 80%;
+    font-size: 30px;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    color: white;
+    margin-bottom: 100px;
   }
   
-  .about .prompt {
-    width: 40%;
-    font-size: 30px;
-  }
   .prompt svg {
     font-size: 60px;
     margin: 5px;

@@ -9,7 +9,7 @@ function Footer() {
     <div className="footer">
         <div className="socialMedia">
             <Link to="https://www.linkedin.com/in/tonducnhan/"><LinkedInIcon/></Link>
-            <EmailIcon/>
+            <Link to="mailto:nhantonduc@gmail.com"><EmailIcon/></Link>
         </div>
         <p> &copy; Nhan D. Ton 2023 </p>
     </div>

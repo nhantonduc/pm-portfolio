@@ -15,8 +15,8 @@ function Navbar() {
     }, [location]);
   return (
     <div className = "navbar" id={expandNavbar ? "open": "close"}>
-        <h1 className='title'><Link to={"/home"}>Nhan D. Ton</Link></h1>
-        <div className = "toggleButton">
+        <h1 className='title' style={{color: "black"}}><Link style={{color: "black"}} to={"/home"}>Nhan D. Ton</Link></h1>
+        <div className = "toggleButton" style={{color:"#000"}}>
             {navLinks.map((link) => (
                 <div
                 key={link.id}
@@ -38,7 +38,7 @@ function Navbar() {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <Link className = "nav" to={link.id} smooth={true} spy={true} offset={-90} duration={500}>{link.title}</Link>
+              <Link className = "nav" style={{color: "black"}} to={link.id} smooth={true} spy={true} offset={-90} duration={500}>{link.title}</Link>
             </div>
           ))}
         </div>

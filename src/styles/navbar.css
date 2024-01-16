@@ -3,22 +3,23 @@
     height: 100px;
     display: flex;
     position: fixed;
-    overflow:hidden;
+    overflow: hidden;
     justify-content: space-between;
     top:0;
-    background: #21325e;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     z-index: 1000;
     scroll-behavior: smooth;
 }
 
 .title {
-    color: white;
+    color: black;
     margin: 40px;
     font-size: 25px;
 }
 
 .links {
-    color: white;
+    color: black;
     margin: 40px;
     font-size: 25px;
     display: flex;

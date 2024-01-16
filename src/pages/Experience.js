@@ -3,6 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timelin
 import { Element } from 'react-scroll';
 import "react-vertical-timeline-component/style.min.css";
 import WorkIcon from "@mui/icons-material/Work";
+import Unimate from "../assets/unimate.png";
 import "../styles/experience.css";
 import SectionWrapper from "../hoc/SectionWrapper.js";
 
@@ -11,18 +12,19 @@ function Experience() {
     <Element name="experience">
     <div className="experience">
         <h1 className='titler'>Experience</h1>
+        <p className='subtext'>Here is my journey with Product so far</p>
         <VerticalTimeline lineColor="gold">
             <VerticalTimelineElement 
                 className="vertical-timeline-element--education"
                 date="October 2023 - Present"
-                iconStyle={{background:"#fff", color: "gold"}}
+                iconStyle={{background:"#000", color: "white"}}
                 icon={<WorkIcon/>}
             >
                 <h3 className="vertical-timeline-element-title">
                     Founder at UniMate
                 </h3>
                 <p>
-                    <ul>
+                    <ul className="description">
                         <li>Pitched and raised $5000+ in total funding, 
                         and secured entry to the selective Spark! Innovation Fellowship program</li>
                         <li>Lead a 7-people startup team through conducting market research and user interviews, designing experiments to validate key
@@ -35,14 +37,14 @@ function Experience() {
             <VerticalTimelineElement 
                 className="vertical-timeline-element--education"
                 date="September 2023 - Present"
-                iconStyle={{background:"#3e497a", color: "#fff"}}
+                iconStyle={{background:"#000", color: "#gold"}}
                 icon={<WorkIcon/>}
             >
                 <h3 className="vertical-timeline-element-title">
-                    Founding Product Manager at BU Hack4Impact
+                    Founding Product Manager @ BU Hack4Impact
                 </h3>
                 <p>
-                    <ul>
+                    <ul className="description">
                         <li>Pioneer the establishment of the product team, set visions and goals, 
                             and develop a structured program to onboard future PMs</li>
                         <li>Drive a 30% improvement in team efficiently by spearheading the adoption of agile practices, orchestrating sprint planning,
@@ -54,15 +56,15 @@ function Experience() {
             </VerticalTimelineElement> 
             <VerticalTimelineElement 
                 className="vertical-timeline-element--education"
-                date="2010 - 2014"
-                iconStyle={{background:"#3e497a", color: "#fff"}}
+                date="May 2023 - August 2023"
+                iconStyle={{background:"#000", color: "#gold"}}
                 icon={<WorkIcon/>}
             >
                 <h3 className="vertical-timeline-element-title">
-                    Cinema Product Management Intern at <a href="https://momo.careers/about/">MoMo (M_Service)</a>
+                    Cinema Product Management Intern @ <a href="https://momo.careers/about/">MoMo</a>
                 </h3>
                 <p>
-                    <ul>
+                    <ul className="description">
                         <li>Launched 2 features with an increase of 20% in Average Order Value and online concession transactions
                             </li>
                         <li>Conducted 15+ user interviews, crafted the job-to-be-done framework, and 

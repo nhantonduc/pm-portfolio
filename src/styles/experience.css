@@ -1,11 +1,13 @@
 .titler {
     margin-top: 60px;
     margin-left: 60px;
+    margin-bottom: 0px;
     font-size: 50px;
     color: white;
 }
 
 .subtext {
+    margin-top: 10px;
     margin-left: 60px;
     color: white;
 }

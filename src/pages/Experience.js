@@ -21,7 +21,7 @@ function Experience() {
                 icon={<WorkIcon/>}
             >
                 <h3 className="vertical-timeline-element-title">
-                    Founder at UniMate
+                    Founder, CEO @ <a href="https://www.linkedin.com/company/unimateco/">UniMate</a>
                 </h3>
                 <p>
                     <ul className="description">

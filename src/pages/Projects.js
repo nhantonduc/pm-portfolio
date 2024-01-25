@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <Element name="projects">
     <div className="projects" Element="projects">
-        <h1 style={{color:"#ffffff"}}>My Personal Projects</h1>
+        <h1 style={{color:"#ffffff"}}>Projects</h1>
         <div className="projectList">
           {projectList.map((project) => {
             return <a href={project.link} target="_blank" rel="noopener noreferrer"><ProjectItem name={project.name} image={project.image}/></a>;
